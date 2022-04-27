@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,i,j,arr[10][10],sea;
+clrscr();
+printf("Enter range of matrix");
+scanf("%d",&n);
+printf("Enter element in matrix\n");
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+scanf("%d",&arr[i][j]);
+}
+}
+printf("Enter element to serch\n");
+scanf("%d",&sea);
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+   if(arr[i][j]==sea)
+   {
+   printf("\nRow = %d col = %d Value = %d Found\n",i,j,arr[i][j]);
+   break;
+
+   }
+}
+}
+getch();
+}
